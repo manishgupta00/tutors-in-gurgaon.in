@@ -2,80 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Classroom with Madam Priti</title>
+  <title>Three-Column Layout</title>
   <style>
-    	.breadcrumb {
-  width: 100%;
-  background-color: #f9f9f9;
-  padding: 10px 20px;
-  font-size: 14px;
-  color: #333;
-  border-bottom: 1px solid #ccc;
-}
-
-.breadcrumb a {
-  text-decoration: none;
-  color: #007bff;
-  margin-right: 5px;
-}
-
-.breadcrumb a:hover {
-  text-decoration: underline;
-}
-
-	
-	
-	body {
+    body {
       margin: 0;
       font-family: Arial, sans-serif;
-      display: flex;
     }
 
-    .section {
-      width: 33.33%;
-      height: 100vh;
-      overflow-y: auto;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    .left {
-      background-color: #f2f2f2; /* Light Gray */
-    }
-
-    .center {
-      background-color: #d0e6ff; /* Light Blue */
-    }
-
-    .right {
-      background-color: #e2f7d4; /* Light Green */
-    }
-
-    h2 {
-      text-align: center;
-    }
-
-    .student-img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    }
-
-    .teacher-info {
-      text-align: center;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-	
-	p {
-      font-size: 14px;
-      line-height: 1.6;
-      color: #333;
-    }
-
-header {
+    header {
       background-color: #333;
       color: white;
       padding: 20px;
@@ -107,32 +41,7 @@ header {
       padding: 20px;
     }
 
-
-	.scrolling-image-container {
-      width: 100%;
-      overflow: hidden;
-      background-color: #f0f0f0;
-      height: 150px; /* adjust as needed */
-      position: relative;
-    }
-
-    .scrolling-image {
-      position: absolute;
-      width: auto;
-      height: 100%;
-      animation: scroll-left 10s linear infinite;
-    }
-	
-	 @keyframes scroll-left {
-      0% {
-        left: 100%;
-      }
-      100% {
-        left: -100%;
-      }
-    }
-	
-	.column {
+    .column {
       flex: 1;
       padding: 10px;
       border: 1px solid #ccc;
@@ -151,43 +60,35 @@ header {
 </head>
 <body>
 
+  <header>
+    My Website Header
+  </header>
 
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
 
- 
-
-  <div class="section left">
-    <div class="teacher-info">Class by Madam Priti</div>
-	<p>
-      In Madam Priti's classroom, students are encouraged to actively participate in discussions and ask questions freely. This open learning environment helps build confidence and critical thinking skills.
-    </p>
-    <p>
-      Interactive activities such as group projects, presentations, and problem-solving exercises are a key part of each lesson. These methods make the sessions more engaging and help reinforce the concepts taught.
-    </p>
-    <p>
-      Madam Priti's teaching style is student-centered, focusing on understanding rather than memorization. Her dedication and enthusiasm inspire students to enjoy learning and strive for excellence.
-    </p>
-    <img src="https://img.freepik.com/free-photo/brunette-girl-with-her-friends_1098-2538.jpg?semt=ais_hybrid&w=740" alt="Student 1" class="student-img" class="student-img">
-	<p>
-      In Madam Priti's classroom, students are encouraged to actively participate in discussions and ask questions freely. This open learning environment helps build confidence and critical thinking skills.
-    </p>
-    <p>
-      Interactive activities such as group projects, presentations, and problem-solving exercises are a key part of each lesson. These methods make the sessions more engaging and help reinforce the concepts taught.
-    </p>
-    <p>
-      Madam Priti's teaching style is student-centered, focusing on understanding rather than memorization. Her dedication and enthusiasm inspire students to enjoy learning and strive for excellence.
-    </p>
-    <img src="https://img.freepik.com/free-photo/young-people-row-with-thumbs-up_1098-2557.jpg?uid=R131929240&ga=GA1.1.767467230.1744025005&semt=ais_hybrid&w=740" alt="Student 2" class="student-img">
+  <div class="main-content">
+    <div class="column">
+      <h2>Column 1</h2>
+      <p>Write your text here...</p>
+    </div>
+    <div class="column">
+      <h2>Column 2</h2>
+      <p>Write your text here...</p>
+    </div>
+    <div class="column">
+      <h2>Column 3</h2>
+      <p>Write your text here...</p>
+    </div>
   </div>
 
-  <div class="section center">
-    <div class="teacher-info">Students Paying Attention</div>
-    <img src="https://img.freepik.com/free-photo/students-knowing-right-answer_329181-14271.jpg?uid=R131929240&ga=GA1.1.767467230.1744025005&semt=ais_hybrid&w=740" alt="Student 3" class="student-img">
-    <img src="https://img.freepik.com/free-photo/everyone-is-smiling-listens-group-people-business-conference-modern-classroom-daytime_146671-16288.jpg?uid=R131929240&ga=GA1.1.767467230.1744025005&semt=ais_hybrid&w=740" alt="Student 4" class="student-img">
-  </div>
+  <footer>
+    © 2025 My Website
+  </footer>
 
-  <div class="section right">
-    <div class="teacher-info">Interactive Learning</div>
-    
-  </div>
 </body>
 </html>
