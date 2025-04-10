@@ -75,7 +75,25 @@
 		  font-weight: bold;
 		  margin-bottom: 20px;
 		}
-	
+	.marquee {
+      background-color: #ffd700;
+      color: #000;
+      padding: 1em;
+      font-size: 1.5em;
+      font-weight: bold;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee span {
+      display: inline-block;
+      animation: scroll 10s linear infinite;
+    }
+
+    @keyframes scroll {
+      0%   { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
 	
   </style>
 </head>
@@ -131,6 +149,10 @@
 	  <h2>More Than Just a Teacher</h2>
       <p>She is a mentor, a motivator, and a master of her subjects. Her role in shaping young minds is remarkable. Describing her means honoring a teacher who teaches not just for the sake of a syllabus, but for the love of learning itself.</p>
     </div>
+  </div>
+  
+  <div class="marquee">
+    <span>⭐ Enroll Now & Join Today! Don’t Miss Out! ⭐</span>
   </div>
 
   <footer>
