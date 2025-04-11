@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hire Teachers – Registration Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2e86de;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      background-color: #2e86de;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1a5276;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="hiringteachers.html">Hiring Teachers</a>
+    <a href="services.html">Services</a>
+	<a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Teacher Hiring Registration</h2>
+    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+      
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="Full Name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="Phone" required>
+
+      <label for="qualification">Highest Qualification</label>
+      <input type="text" id="qualification" name="Qualification" required>
+
+      <label for="subject">Subject Expertise</label>
+      <select id="subject" name="Subject">
+        <option value="Maths">Maths</option>
+        <option value="Science">Science</option>
+        <option value="English">English</option>
+        <option value="Social Studies">Social Studies</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="experience">Years of Teaching Experience</label>
+      <input type="number" id="experience" name="Experience" min="0" required>
+
+      <label for="message">Tell us why you want to join</label>
+      <textarea id="message" name="Why Join" rows="4"></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+    <p class="note">We'll contact shortlisted candidates by email or phone. Thank you for your interest!</p>
+  </div>
+
+</body>
+</html>
